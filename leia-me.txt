@@ -1,0 +1,8 @@
+# Insira os contatos no arquivo 'contatos.txt', com +55DDDnúmero
+# Ex:
++5512912345671
++5512912345672
++5512912345673
+
+# OBS¹: O bot validará apenas se a biblioteca 'PyWhatKit' conseguiu abrir o navegador,
+#       caso o número mencionado não exista ainda será contabilizado como sucesso.
