@@ -15,8 +15,6 @@ método <strong>enviarMensagem()</strong>.
 
 ### Demonstração
 
-[< Vídeo demonstrativo >](https://youtu.be/iD8G7yR0lzk)
-<br>
 <img style="display: block; margin-left: auto; margin-right: auto;" src="https://i.ibb.co/svdfY1r/console.png" alt="" />
 <br>
 <img style="display: block; margin-left: auto; margin-right: auto;" src="https://i.ibb.co/q7DSHG9/resultado-console.png" alt="" />
