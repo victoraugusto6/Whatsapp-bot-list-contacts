@@ -4,7 +4,7 @@ O bot foi realizado utilizando a linguagem Python e as bibliotecas <strong>'PyWh
 Pynput'</strong>.
 
 É informado os números de celular no arquivo 'contatos.txt' e o bot enviará mensagem informada no parâmetro do
-método <strong>enviarMensagem()</strong>.
+método <strong>enviar_mensagem()</strong>.
 
 # Necessário:
 
