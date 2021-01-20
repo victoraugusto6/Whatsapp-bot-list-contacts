@@ -1,4 +1,4 @@
 from uteis import metodos
 
 # Digite sua mensagem como parâmetro abaixo
-metodos.enviarMensagem("Olá! 😎")
+metodos.enviar_mensagem("Olá! 😎")

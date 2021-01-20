@@ -4,7 +4,7 @@ from time import sleep
 from pynput.keyboard import Key, Controller
 
 
-def fecharGuia():
+def fechar_guia():
     """Gera um comando de 'CTRL' + 'W' para fechar
     a guia do navegador
     """
@@ -15,7 +15,7 @@ def fecharGuia():
     tecla.release('w')
 
 
-def carregarLista():
+def carregar_lista():
     """Carregar lista de contatos no array 'lista'
     """
 
@@ -31,11 +31,11 @@ def carregarLista():
     return lista
 
 
-def enviarMensagem(msg='Olá'):
+def enviar_mensagem(msg='Olá'):
     """Realiza o envio de mensagem para os contatos
     """
-    carregarLista()
-    lista = carregarLista()
+    carregar_lista()
+    lista = carregar_lista()
     cont = 0
     listaSucesso = list()
     listaFalha = list()
@@ -45,7 +45,7 @@ def enviarMensagem(msg='Olá'):
         try:
             print(f'Enviando para: {lista[cont]}')
             pywhatkit.sendwhatmsg(lista[cont], msg,
-                                  datetime.today().hour, datetime.today().minute+1, wait_time=5)
+                                  datetime.today().hour, datetime.today().minute + 1, wait_time=5)
         except:
             print(f'Falha ao enviar para: {lista[cont]}')
             listaFalha.append(lista[cont])
@@ -54,11 +54,11 @@ def enviarMensagem(msg='Olá'):
         else:
             listaSucesso.append(lista[cont])
             sleep(5)
-            fecharGuia()
+            fechar_guia()
 
             # Caso seja o último item da lista
             # não precisará contar até 60s
-            if cont == len(lista)-1:
+            if cont == len(lista) - 1:
                 break
 
             sleep(60)
